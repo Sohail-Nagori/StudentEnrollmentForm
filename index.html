@@ -1,0 +1,55 @@
+ 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Student Enrollment Form</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <script src="https://login2explore.com/jpdb/resources/js/0.0.3/jpdb-commons.js"></script>
+ <script src="js/index.js"></script>
+</head>
+ 
+ <body>
+ 
+<div class="container">
+  <h3 style="text-align: center">Student Form using the JPDB API</h3>
+  <form id='stdForm' method='post'>
+    <div class="form-group">
+      <label for="rollNumber">Roll Number </label>
+      <input type="text" class="form-control" id="rollNumber" placeholder="Enter the roll number " name="rollNumber" onchange='javascript:getStudent()' autofocus>
+    </div>
+    <div class="form-group">
+      <label for="studentName">Full-Name</label>
+      <input type="text" class="form-control" id="studentName" placeholder="Enter student full name" name="studentName">
+    </div>
+      <div class="form-group">
+      <label for="studentClass">Class</label>
+      <input type="text" class="form-control" id="studentClass" placeholder="Enter student class" name="studentClass">
+    </div>
+      <div class="form-group">
+      <label for="studentDOB">Date Of Birth</label>
+      <input type="date" class="form-control" id="studentDOB" placeholder="Enter student date of birth" name="studentDOB">
+    </div>
+      <div class="form-group">
+      <label for="studentAddress">Address</label>
+      <textarea class="form-control" id="studentAddress" placeholder="Enter student address" name="studentAddress" rows="5" cols="15"></textarea>
+    </div>
+      <div class="form-group">
+      <label for="enrollmentDate">Enrollment Date</label>
+      <input type="date" class="form-control" id="enrollmentDate" placeholder="Enter student enrollment date" name="enrollmentDate">
+    </div>
+<div style="text-align:center ">
+  <input type='button' class='btn btn-primary' id='studentSave' value='Save' onclick='javascript:saveStudent()' disabled>
+  <input type='button' class='btn btn-primary' id='studentUpdate' value='Update' onclick='javascript:updateStudent()' disabled>
+  <input type='button' class='btn btn-primary' id='studentReset' value='Reset' onclick='javascript:resetStudent()' disabled>
+  </div>  
+  
+  </form>
+</div>
+ 
+    
+</body>
+</html>
