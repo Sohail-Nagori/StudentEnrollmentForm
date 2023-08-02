@@ -1,4 +1,4 @@
-var jpdbBaseURL='https://api.login2explore.com:5577';
+var jpdbBaseURL='http://api.login2explore.com:5577';
 var jpdbIRL='/api/irl';
 var jpdbIML='/api/iml';
 var studentDBName='SCHOOL-DB';
